@@ -61,7 +61,7 @@ map.on('style.load', function () {
 
     function updateMap() {
         console.log("Updating map with realtime data");
-        fetch("/data.json")
+        fetch("data.json")
             .then(response => response.json())
             .then(rsp => {
                 // // Clear existing markers
